@@ -1,0 +1,25 @@
+{
+  "name": "bootstrapblogapp",
+  "version": "1.0.0",
+  "description": "bootstrtp theme based Blog app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdityaKumarJha/Bootstrap_Theme_Blog_App.git"
+  },
+  "keywords": [
+    "Bootstrap",
+    "Node",
+    "js",
+    "Blog"
+  ],
+  "author": "Aditya Kumar Jha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdityaKumarJha/Bootstrap_Theme_Blog_App/issues"
+  },
+  "homepage": "https://github.com/AdityaKumarJha/Bootstrap_Theme_Blog_App#readme"
+}
