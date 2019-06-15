@@ -21,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/AdityaKumarJha/Bootstrap_Theme_Blog_App/issues"
   },
-  "homepage": "https://github.com/AdityaKumarJha/Bootstrap_Theme_Blog_App#readme"
+  "homepage": "https://github.com/AdityaKumarJha/Bootstrap_Theme_Blog_App#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1",
+    "startbootstrap-clean-blog": "^5.0.7"
+  }
 }
