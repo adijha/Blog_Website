@@ -4,6 +4,7 @@
   "description": "bootstrtp theme based Blog app",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,7 +25,9 @@
   "homepage": "https://github.com/AdityaKumarJha/Bootstrap_Theme_Blog_App#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "nodemon": "^1.19.1",
     "startbootstrap-clean-blog": "^5.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
