@@ -4,12 +4,15 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const fileUpload = require("express-fileupload");
- 
+require("dotenv").config();
+
 const Post = require('./database/models/Post');
  
 const app = new express();
  
-mongoose.connect('mongodb://localhost:27017/node-blog', { useNewUrlParser: true })
+
+
+mongoose.connect(process.env.mongoURI, { useNewUrlParser: true })
     .then(() => 'You are now connected to Mongo!')
     .catch(err => console.error('Something went wrong', err))
  
