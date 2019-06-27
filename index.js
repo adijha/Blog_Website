@@ -9,9 +9,6 @@ require("dotenv").config();
 const Post = require('./database/models/Post');
  
 const app = new express();
- 
-
-
 mongoose.connect(process.env.mongoURI, { useNewUrlParser: true })
     .then(() => 'You are now connected to Mongo!')
     .catch(err => console.error('Something went wrong', err))
@@ -25,6 +22,9 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
  
+const storePost = require('.middleware/storePost')
+app.use('/posts/store', storePost)
+
 app.get('/', async (req, res) => {
     const posts = await Post.find({})
     res.render('index', {
