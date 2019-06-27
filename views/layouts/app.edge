@@ -33,20 +33,26 @@
         <i class="fa fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="post.html">Sample Post</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/posts/new">New Post</a>
+              </li>
+              @if(!auth)
+                <li class="nav-item">
+                  <a class="nav-link" href="/auth/login">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/auth/register">Register</a>
+                </li>
+              @else
+                <li class="nav-item">
+                  <a class="nav-link" href="/auth/logout">Logout</a>
+                </li>
+              @endif
+            </ul>
       </div>
     </div>
   </nav>
