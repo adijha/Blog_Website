@@ -1,4 +1,4 @@
-require("dotenv");
+require("dotenv").config();
 const express = require("express");
 const edge = require("edge.js");
 const expressEdge = require("express-edge");
@@ -20,7 +20,7 @@ const loginUserController = require('./controllers/loginUser');
  
 const app = new express();
  
-mongoose.connect("mongoURI=mongodb+srv://adi:mern@devconnector-5hotg.mongodb.net/samrat?retryWrites=true&w=majority", { useNewUrlParser: true })
+mongoose.connect(process.env.mongoURI, { useNewUrlParser: true })
     .then(() => 'You are now connected to Mongo!')
     .catch(err => console.error('Something went wrong', err))
  
