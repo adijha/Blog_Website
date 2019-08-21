@@ -66,6 +66,6 @@ app.get("/auth/register", redirectIfAuthenticated, createUserController);
 app.get("/auth/logout", redirectIfAuthenticated, logoutController);
 app.post("/users/register", redirectIfAuthenticated, storeUserController);
  
-app.listen(4000, () => {
+app.listen(process.env.PORT || 4000, () => {
   console.log("App listening on port 4000");
 });
